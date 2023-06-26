@@ -33,13 +33,14 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
-
 .container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 428px;
+    /* max-width: 1158px; */
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+
     /* outline: 2px solid yellow; */
 }
 
@@ -59,6 +60,7 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -76,6 +78,7 @@ img {
 
 .text {
     font-size: 16px;
+    font-family: Roboto;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
@@ -91,7 +94,7 @@ img {
 }
 
 
-.inn::after {
+ .inn::after {
     display: block;
     position: absolute;
     content: '';
@@ -101,12 +104,12 @@ img {
     bottom: -1px;
     left: 0;
     background-color: var(--active-color);
-}
+} 
 
 
 
 
-.header-menu {
+ .header-menu {
     display: flex;
     gap: 40px;
 
@@ -119,12 +122,13 @@ img {
 
 .div-header {
     display: flex;
+
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-}
+} 
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -186,37 +190,42 @@ img {
     color: var(--active-color);
 }
 
-/*!------------------ HERO ---------------------------*/
+.ham-head-svg {
+    fill: var(--title-color);
+}
+
+/*!------- HERO ---------------------------*/
 .hero {
     background-color: var(--title-color);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
-    height: 600px;
+    max-width: 428px;
+    height: 432px;
     margin: 0 auto;
-
-
-
 }
 
 .div-hero {}
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     Color: var(--whitty-color);
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+    margin-bottom: 72px;
+    max-width: 320px;
+    text-transform: capitalize;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
 }
+
 
 .hero-btn {
     font-family: inherit;
@@ -248,8 +257,10 @@ img {
 /*!------------------our advantages---------------------  */
 .adv {
     background-color: var(--whitty-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 88px;
+    padding-bottom: 96px;
+    
+    
 }
 
 .adv-div {}
@@ -257,7 +268,8 @@ img {
 .adv-title {}
 
 .adv-div-icon {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     width: 264px;
@@ -271,20 +283,39 @@ img {
 
 .adv-list {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
+    flex-wrap: wrap;
+
+    
+    
 }
 
 .adv-item {
-    width: calc((100% - 3*24px) / 4);
+    /* width: calc((100% - 3*24px) / 4); */
+     width: 100%;
 }
 
 .adv-item-title {
-    text-align: left;
+    /* text-align: left; */
+    font-family: Roboto;
+    text-align: center;
     margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
 }
 
 
-.adv-item-text {}
+
+.adv-item-text {
+        font-weight: 500;
+}
+    
+
 
 /*!------------------What are we doing---------------------  */
 .wawd {
@@ -317,11 +348,12 @@ img {
 /*!------------------Our Team-------------------------------  */
 .team {
     background-color: var(--darwhit-color);
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-bottom: 96px;
+    padding-top: 96px;
 }
 
 .team-title {
+    font-family: Roboto;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -335,12 +367,15 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .team-item {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -402,19 +437,18 @@ img {
 
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-.div-foot-content {}
-
-.div-foot-soc {}
 
 .foot-tittle {
     color: var(--whitty-color);
     font-weight: 500;
     margin-bottom: 16px;
-
+    
+  
+    
 }
 
 .foot-soc-link {
@@ -446,21 +480,39 @@ img {
 
 .div-foot {
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px
+
 }
 
 .foot-soc-icon {
     display: flex;
     gap: 16px;
+    /* margin-top: 16px; */
 }
 
 .div-foot-icon {}
 
-.div-foot-soc {}
+.div-foot-soc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
     
 
 .div-foot-content {
-    margin-right: 120px;
+    margin-bottom: 72px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+    /* margin-right: 120px; */
 }
 
 .foot-icon-svg {
@@ -468,13 +520,18 @@ img {
 }
 
 .foot {
-    display: inline-block;
+    display: block;
+    text-align: center;
     margin-bottom: 16px;
+    margin-right: unset;
+    
+      
 }
 
 .footer-text {
     color: var(--darwhit-color);
     max-width: 264px;
+
 }
 
 .foot-logo-part {
@@ -482,7 +539,9 @@ img {
 }
 
 .foot-sub-div {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+     width: 100%;
+
 
 }
 
@@ -493,20 +552,25 @@ img {
     letter-spacing: 0.02em;
     color: var(--whitty-color);
     margin-bottom: 16px;
+    text-align: center;
 
 }
 
 .foot-sub-form {
-    display: flex;
-    gap: 24px;
-   
+     /* display: flex; */
+      /* flex-direction: column;  */
+    /* gap: 24px; */
+
+    
 }
 
 .sub-label {
 
 }
 .foot-mail-input {
-    width: 264px;
+    /* width: 264px; */
+    width: 100%;
+    max-width: 398px;
     height: 40px;
     border: 1px solid #FFFFFF;
     font-size: 12px;
@@ -516,7 +580,9 @@ img {
     border-radius: 4px;
     background-color: transparent;
     color: var(--whitty-color);
-    padding-left: 16px; 
+    padding-left: 16px;
+    margin-bottom: 16px;
+    
     
 }
 
@@ -534,9 +600,12 @@ img {
 }
 
 .foot-sub-btn {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     cursor: pointer;
-    min-width: 165px;
+     /* min-width: 165px; */
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
     height: 40px;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -550,6 +619,9 @@ img {
     justify-content: center;
     align-items: center;
     transition: background-color var(--trans);
+   
+    
+
 }
 
 .foot-sub-btn:hover,
@@ -559,8 +631,8 @@ img {
 
 /*!------------------CUSTOMERS-------------------------------  */
 .custom {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
 }
 
@@ -568,15 +640,16 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    font-family: Roboto;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
 
 .custom-icon-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap:72px 16px;
 }
 
 .custom-link {
@@ -589,13 +662,14 @@ img {
     width: 100%;
     height: 100%;
     transition: border-color var(--trans),
-        color var(--trans);
+    color var(--trans);
 }
 
 .custom-div {}
 
 .custom-icon-item {
-    width: calc((100% - 120px) / 6);
+    /* width: calc((100% - 120px) / 6); */
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -753,7 +827,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 392px;
     min-height: 584px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -968,3 +1042,9 @@ img {
 .check-span {
 
 }
+       /* FIRST MOBILE */
+  
+       
+   
+    
+  
