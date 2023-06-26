@@ -194,19 +194,30 @@ img {
     fill: var(--title-color);
 }
 
-/*!------- HERO ---------------------------*/
+   /*!------- HERO ---------*/
 .hero {
     background-color: var(--title-color);
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero1mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 428px;
-    height: 432px;
+    /* height: 432px; */
     margin: 0 auto;
 }
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero2mob.jpg);
+    }
+}
+
+
+
 
 .div-hero {}
 
@@ -827,8 +838,9 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 392px;
-    min-height: 584px;
+    width: 100%;
+    max-width: 392px;
+    /* min-height: 584px; */
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
