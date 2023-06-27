@@ -2,32 +2,16 @@
 
 
 
+/* ----320----- */
+@media screen and (max-width: 427px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
+.ham-soc-icon {
+    gap: 30px;
+    }
+ .ham-adrs-tel {
+     font-size: 26px;
+}
+}
 
   /* ---- 768 ----- */
 
@@ -35,6 +19,7 @@
 .container {max-width: 768px}
 
        /* HEADER */
+
 
 .logo {margin-right: 120px;}
 .ham-btn {

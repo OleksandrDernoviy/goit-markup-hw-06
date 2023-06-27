@@ -36,10 +36,10 @@
                     <li><a href="tel:+110001111111" class="link-adrs link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-             <button class="ham-btn" type="button"><svg class="ham-head-svg" width="32" height="22">
+             <button class="ham-btn" type="button" data-ham-open><svg class="ham-head-svg" width="32" height="22">
                  <use href="./images/icons.svg#icon-ham"></use>
-             </svg></button>         
-        </div>
+                </svg></button>           
+          </div>
     </header>
     <main>
           <section class="hero">
@@ -414,7 +414,56 @@
             </form>
         </div>
     </div>
+    <div class="ham-menu is-hidden" data-ham>
+        <button class="ham-close-btn" type="button" data-ham-close><svg class="ham-head-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg></button>
+       <div>
+         <ul class="list ham-list-menu">
+             <li class="ham-item"><a href="./index.html" class="link-ham link-ham-edit link">Studio</a></li>
+             <li><a href="./portfolio.html" class="link-ham  link">Portfolio</a></li>
+             <li><a href="" class="link-ham link">Contacts</a></li>
+         </ul>
+        </div>
+        <div>
+         <ul class="list ham-adrs">
+            <li><a href="tel:+110001111111" class="ham-adrs-tel link">+11 (000) 111-11-11</a></li>
+             <li><a href="mailto:info@devstudio.com" class="ham-adrs link">info@devstudio.com</a></li>
+         </ul>
+         <ul class="ham-soc-icon list">
+             <li class="ham-soc-item">
+                 <a class="ham-soc-link" href="#">
+                     <svg class="ham-icon-svg" width="16" height="16">
+                         <use href="./images/icons.svg#icon-instagram"></use>
+                     </svg>
+                 </a>
+             </li>
+             <li class="ham-soc-item">
+                 <a class="ham-soc-link" href="#">
+                     <svg class="ham-icon-svg" width="16" height="16">
+                         <use href="./images/icons.svg#icon-twitter"></use>
+                     </svg>
+                 </a>
+             </li>
+             <li class="ham-soc-item">
+                 <a class="ham-soc-link" href="#">
+                     <svg class="ham-icon-svg" width="16" height="16">
+                         <use href="./images/icons.svg#icon-facebook"></use>
+                     </svg>
+                 </a>
+             </li>
+             <li class="ham-soc-item">
+                 <a class="ham-soc-link" href="#">
+                     <svg class="ham-icon-svg" width="16" height="16">
+                         <use href="./images/icons.svg#icon-linkedin"></use>
+                     </svg>
+                 </a>
+             </li>
+         </ul>
+    </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/ham.js"></script>
 </body>
 
 </html>
