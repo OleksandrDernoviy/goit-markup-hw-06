@@ -316,11 +316,11 @@
 
     /* WAWD */
 .wawd {
-    display: unset;    
+    display: flex;
+   padding-bottom: 120px;     
 }
-.wawd-list {
-    margin-bottom: 120px;
-}
+
+
 
     /* TEAM */    
  
