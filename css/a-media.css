@@ -90,6 +90,7 @@
 .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px;
 }
 
 
@@ -275,6 +276,7 @@
 .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px;
 }
 .hero-title {
     font-size: 56px;
@@ -314,9 +316,11 @@
 
     /* WAWD */
 .wawd {
-    display: unset;
+    display: unset;    
 }
-
+.wawd-list {
+    margin-bottom: 120px;
+}
 
     /* TEAM */    
  
