@@ -3,14 +3,18 @@
 
 
 /* ----320----- */
-@media screen and (max-width: 427px) {
-
+@media screen and (max-width: 420px) {
+   /* footer */
 .ham-soc-icon {
     gap: 30px;
     }
  .ham-adrs-tel {
      font-size: 26px;
 }
+   /* filter */
+   .filter-list {
+    gap: 16px 9px;
+   }
 }
 
   /* ---- 768 ----- */
@@ -45,7 +49,6 @@
 .div-header {
     align-items: center;
 }
-
 .inn::after {
     display: block;
     position: absolute;
@@ -195,6 +198,29 @@
 .foot-sub-div {
     width: unset;
 }
+
+   /* FILTER */
+
+.filter {
+    padding-top: 64px;
+}
+.filter-list {
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 64px;
+}
+.filter-card-list {
+    flex-wrap: wrap;
+    gap: 72px 24px; 
+    flex-direction: unset;
+    justify-content: unset;
+}
+
+.card-item {
+    width: calc((100% - 24px)/2);
+}
+
 }
 
 /*-----  1158  -----*/
@@ -374,6 +400,26 @@
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+   /* FILTER */
+
+.filter {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.filter-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.filter-card-list{
+    flex-wrap: wrap;
+     gap: 48px 24px;
+     flex-direction: unset;
+}
+.card-item {
+    width: calc((100% - 2*24px)/3);
 }
 } 
 
